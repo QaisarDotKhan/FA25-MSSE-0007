@@ -19,6 +19,8 @@
 
 from Calculate import calculate_grade
 from Validate import validate_name, validate_marks
+from student import Student
+from report import display_report
 
 def main():
     name = input("Enter student name: ")
@@ -31,9 +33,10 @@ def main():
 
     grade = calculate_grade(marks)
 
-    print("\nStudent Report")
-    print("----------------")
-    print(f"Name: {name}")
+    student = Student(name, marks, grade)
+
+    display_report(student)
+ 
     print(f"Marks: {marks}")
     print(f"Grade: {grade}")
  
