@@ -20,7 +20,7 @@
 from Services.Calculate import calculate_grade
 from utils.Validate import validate_name, validate_marks
 from models.student import Student
-from report import display_report
+from reports.student_report import display_report
 
 def main():
     name = input("Enter student name: ")
