@@ -1,11 +1,11 @@
-def calculate_grade(marks):
-    if marks >= 80:
+def calculate_grade(marks: float) -> str:
+    if marks >= 85:
         return "A"
-    elif marks >= 70:
+    elif marks >= 75:
         return "B"
-    elif marks >= 60:
+    elif marks >= 65:
         return "C"
-    elif marks >= 50:
+    elif marks >= 55:
         return "D"
     else:
         return "F"

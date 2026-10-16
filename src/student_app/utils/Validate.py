@@ -1,5 +1,9 @@
-def validate_name(name):
-    return name != ""
-    
 def validate_marks(marks):
-    return 0 <= marks <= 100
+    try:
+        numeric_marks = float(marks)
+    except (ValueError, TypeError):
+        return False
+        
+    if numeric_marks < 0 or numeric_marks > 100:
+        return False
+    return True
