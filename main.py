@@ -17,9 +17,9 @@
 # if __name__ == "__main__":
 #     main()
 
-from Calculate import calculate_grade
-from Validate import validate_name, validate_marks
-from student import Student
+from Services.Calculate import calculate_grade
+from utils.Validate import validate_name, validate_marks
+from models.student import Student
 from report import display_report
 
 def main():
